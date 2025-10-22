@@ -32,4 +32,4 @@ jobs:
       run: ls -R
 
     - name: Build With Maven
-      run: mvn clean install
+      run: cd todoapp-swe451; mvn clean install
