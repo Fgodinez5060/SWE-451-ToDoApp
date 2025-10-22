@@ -31,6 +31,10 @@ jobs:
     - name: List File (debugging)
       run: ls -R
 
+    - name: Run Unit tests
+      run: mvn test
+      working-directory: ./todoapp-swe451
+
     - name: Build With Maven
       run:  mvn clean install
       working-directory: ./todoapp-swe451
